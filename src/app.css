@@ -1,5 +1,41 @@
 @import "css/reset.css";
 
-.main-header {
+.top-block {
+    height: 300px;
+    display: flex;
+}
+
+.image-block {
+    flex: 0 0 30%;
+    background-color: blue;
+}
+.image-block__photo {
+    width: 100%;
+    height: 100%;
+}
+
+.name-block {
+    display: flex;
+    
+    flex: 0 0 70%;
+    background-color: yellow;
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-block__name {
+    text-transform: uppercase;
+}
+
+.name-block__first-name {
     color: red;
+}
+
+.name-block__last-name {
+    color:green;
+}
+
+.name-block__position{
+    margin-top: 10px;
 }
