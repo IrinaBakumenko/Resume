@@ -1,14 +1,27 @@
 @import "css/reset.css";
 
+:root {
+    --name-block-background-color: #ca9c85;
+    --color-grey: #3e4754; 
+    --color-light: #efeced;
+    --color-brown: #785845;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .top-block {
-    height: 300px;
     display: flex;
 }
 
 .image-block {
-    flex: 0 0 30%;
-    background-color: blue;
+    flex: 0 0 300px;
+    height: 300px;
 }
+
 .image-block__photo {
     width: 100%;
     height: 100%;
@@ -16,26 +29,55 @@
 
 .name-block {
     display: flex;
-    
-    flex: 0 0 70%;
-    background-color: yellow;
-    font-size: 26px;
+    flex: 1 1 auto;
+    background-color: var(--name-block-background-color);
     justify-content: center;
     align-items: center;
-}
-
-.name-block__name {
     text-transform: uppercase;
 }
 
+.name-block__name {
+    font-size: 36px;
+}
+
 .name-block__first-name {
-    color: red;
+    color: var(--color-grey);
 }
 
 .name-block__last-name {
-    color:green;
+    color: var(--color-light);
 }
 
 .name-block__position{
     margin-top: 10px;
+    color: var(--color-brown);
+    font-size: 26px;
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .top-block {
+    flex-wrap: wrap;
+  }
+
+  .image-block {
+    flex: 1 1 100%;
+    height: auto;
+  }
+
+  .name-block {
+    flex: 1 1 100%;
+    height: 200px;
+  }
 }
