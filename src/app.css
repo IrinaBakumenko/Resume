@@ -227,6 +227,10 @@ a {
     height: 200px;
   }
 
+  .name__inner {
+    text-align: center;
+  }
+
   .main {
     flex-wrap: wrap;
   }
@@ -234,6 +238,22 @@ a {
   .personal-info {
     flex: 1 1 100%;
     padding: 20px;
+    width: 100%;
+  }
+
+  .personal-info__contact-item {
+    line-height: normal;
+  }
+
+  .personal-info__contact-item > i {
+    padding-right: 10px;
+  }
+
+  .personal-info__contact-item > a {
+    flex: 1 1 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   .experience {
