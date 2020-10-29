@@ -34,7 +34,7 @@ a {
 }
 
 .image {
-  flex: 0 0 360px;
+  flex: 0 0 380px;
   height: 300px;
 }
 
@@ -76,7 +76,7 @@ a {
 }
 
 .personal-info {
-  flex: 0 0 360px;
+  flex: 0 0 380px;
   background: var(--color-grey);
   padding: 40px 30px;
   box-sizing: border-box;
