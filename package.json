@@ -1,7 +1,11 @@
 {
   "name": "resume",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html --open"
+  },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "sass": "^1.28.0"
