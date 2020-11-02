@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(#3e4754 30%, #ca9c85);
+  background: linear-gradient($color-grey 30%, $color-peachy);
   background-attachment: fixed;
 }
 
@@ -41,7 +41,7 @@ a {
 .name {
   display: flex;
   flex: 1 1 auto;
-  background-color: $name-background-color;
+  background-color: $color-peachy;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
@@ -80,7 +80,7 @@ a {
     font-size: 1.25rem;
     text-transform: uppercase;
     color: $color-light;
-    border-bottom: 2px solid $name-background-color;
+    border-bottom: 2px solid $color-peachy;
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -104,7 +104,7 @@ a {
     color: $color-light;
 
     & a:hover {
-      color: $color-a;
+      color: $color-peachy;
       text-decoration: underline;
     }
   }
@@ -166,7 +166,7 @@ a {
 
     &-appendix {
       flex: 0 0 10%;
-      background-color: #ca9c85;
+      background-color: $color-peachy;
     }
   }
 
