@@ -78,12 +78,12 @@ a {
   padding: 40px 30px;
 
   &__header {
+    border-bottom: 2px solid $color-peachy;
+    color: $color-light;
     font: {
       size: 1.25rem;
       weight: bold;
     }
-    border-bottom: 2px solid $color-peachy;
-    color: $color-light;
     margin-bottom: 20px;
     padding-bottom: 10px;
     text-transform: uppercase;
@@ -155,13 +155,13 @@ a {
   padding: 40px;
 
   &__header {
+    background-color: $color-grey;
+    color: $color-light;
+    flex: 0 0 90%;
     font: {
       size: 1.25rem;
       weight: bold;
     }
-    background-color: $color-grey;
-    color: $color-light;
-    flex: 0 0 90%;
     padding: 7px 0 7px 15px;
     text-transform: uppercase;
 
@@ -179,20 +179,20 @@ a {
     padding-top: 20px;
 
     &-header {
+      color: $color-grey;
       font: {
         size: 1.25rem;
         weight: bold;
       }
-      color: $color-grey;
       margin-bottom: 20px;
     }
 
     &-date {
+      color: $color-grey;
       font: {
         size: 1rem;
         weight: bold;
       }
-      color: $color-grey;
     }
 
     &-text {
