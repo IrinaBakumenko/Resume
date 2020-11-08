@@ -2,15 +2,21 @@
 @import "./css/icons.css";
 @import "./css/vars.scss";
 
+@mixin text($fz) {
+  font: {
+    size: $fz;
+    weight: bold;
+  }
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
   background: linear-gradient($color-grey 30%, $color-peachy);
   background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
 }
 
 a { 
@@ -19,8 +25,8 @@ a {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
   padding: 20px;
 }
 
@@ -33,22 +39,21 @@ a {
   height: 300px;
 
   &__photo {
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 }
 
 .name {
+  align-items: center;
+  background-color: $color-peachy;
   display: flex;
   flex: 1 1 auto;
-  background-color: $color-peachy;
   justify-content: center;
-  align-items: center;
   text-transform: uppercase;
 
   &__full-name {
-    font-size: 2.25rem;
-    font-weight: bold;
+    @include text(1.8*$fz);
   }
 
   &__first-name {
@@ -60,9 +65,9 @@ a {
   }
 
   &__position {
-    margin-top: 10px;
     color: $color-brown;
-    font-size: 1.6rem;
+    font-size: 1.28*$fz;
+    margin-top: 10px;
   }
 }
 
@@ -71,24 +76,23 @@ a {
 }
 
 .personal-info {
-  flex: 0 0 380px;
   background: $color-grey;
-  padding: 40px 30px;
   box-sizing: border-box;
+  flex: 0 0 380px;
+  padding: 40px 30px;
 
   &__header {
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    color: $color-light;
+    @include text($fz);
     border-bottom: 2px solid $color-peachy;
-    padding-bottom: 10px;
+    color: $color-light;
     margin-bottom: 20px;
-    font-weight: bold;
+    padding-bottom: 10px;
+    text-transform: uppercase;
   }
 
   &__about-me-text {
     color: $color-light;
-    font-size: 1rem;
+    font-size: 0.8*$fz;
     line-height: 1.3;
   }
 
@@ -97,11 +101,11 @@ a {
   }
 
   &__contact-item {
-    display: flex;
     align-items: center;
-    margin-top: 15px;
-    font-size: 1rem;
     color: $color-light;
+    display: flex;
+    font-size: 0.8*$fz;
+    margin-top: 15px;
 
     & a:hover {
       color: $color-peachy;
@@ -118,22 +122,22 @@ a {
   }
 
   &__skills-item {
-    display: flex;
-    color: $color-light;
     align-items: center;
+    color: $color-light;
+    display: flex;
     padding-top: 20px;
 
     &-name {
       flex: 0 0 100px;
-      font-size: 1rem;
+      font-size: 0.8*$fz;
       text-transform: uppercase;
     }
 
     &-value {
-      flex: 1 1 auto;
       display: flex;
+      flex: 1 1 auto;
+      font-size: 0.8*$fz;
       justify-content: space-evenly;
-      font-size: 1rem;
     }
   }
 }
@@ -147,26 +151,25 @@ a {
 }
 
 .experience {
-  flex: 1 1 auto;
   background-color: $color-light;
+  flex: 1 1 auto;
   padding: 40px;
 
   &__header {
-    flex: 0 0 90%;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $color-light;
+    @include text($fz);
     background-color: $color-grey;
+    color: $color-light;
+    flex: 0 0 90%;
     padding: 7px 0 7px 15px;
+    text-transform: uppercase;
 
     &-wrap {
       display: flex;
     }
 
     &-appendix {
-      flex: 0 0 10%;
       background-color: $color-peachy;
+      flex: 0 0 10%;
     }
   }
 
@@ -174,23 +177,21 @@ a {
     padding-top: 20px;
 
     &-header {
+      @include text($fz);
       color: $color-grey;
-      font-size: 1.25rem;
-      font-weight: bold;
       margin-bottom: 20px;
     }
 
     &-date {
+      @include text(0.8*$fz);
       color: $color-grey;
-      font-size: 1rem;
-      font-weight: bold;
     }
 
     &-text {
-      font-size: 1rem;
-      margin-top: 20px;
       color: lighten($color-grey, 9);
+      font-size: 0.8*$fz;
       line-height: 1.3;
+      margin-top: 20px;
     }
   }
 
@@ -245,8 +246,8 @@ a {
       & > a {
         flex: 1 1 auto;
         overflow: hidden;
-        white-space: nowrap;
         text-overflow: ellipsis;
+        white-space: nowrap;
       }
     }
   }
