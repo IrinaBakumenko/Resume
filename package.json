@@ -1,7 +1,7 @@
 {
   "name": "resume",
   "version": "1.0.0",
-  "homepage": "https://ibakum.github.io/Resume/",
+  "homepage": "https://ibakum.github.io/Resume/dist/",
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "parcel build src/index.html",
